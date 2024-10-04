@@ -1,11 +1,11 @@
-import { FeatureSlug, Hero } from "@components";
+import { FeatureSlug, Hero, PropertyListings } from "@components";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <FeatureSlug />
-      <div>Property List</div>
+      <PropertyListings />
       <div>description</div>
       <div>Add property card</div>
       <div>testimonial section</div>

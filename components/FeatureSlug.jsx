@@ -73,7 +73,7 @@ function FeatureSlug() {
     },
   ];
   return (
-    <section className="px-20">
+    <section className="mx-20 mt-[84px]">
       <SectionTitle title={"Minimum Living Cost for everything"} />
       <div className="grid grid-cols-4 mt-9 gap-5">
         {features.map((feature, index) => (
