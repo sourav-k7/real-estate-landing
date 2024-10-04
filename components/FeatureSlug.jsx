@@ -10,6 +10,7 @@ import {
   SentimentSatisfiedAltOutlined,
   SurroundSoundOutlined,
 } from "@mui/icons-material";
+import FeatureCard from "./FeatureCard";
 
 function FeatureSlug() {
   let features = [
@@ -77,21 +78,7 @@ function FeatureSlug() {
       <SectionTitle title={"Minimum Living Cost for everything"} />
       <div className="grid grid-cols-4 mt-9 gap-5">
         {features.map((feature, index) => (
-          <Card
-            key={index}
-            invertedColors={false}
-            orientation="vertical"
-            size="sm"
-            variant="outlined"
-            className="py-8 px-9 bg-white drop-shadow-lg"
-          >
-            <CardContent>
-              {feature.icon}
-              <div className="font-semibold text-[28px] text-primary mt-12">
-                {feature.label}
-              </div>
-            </CardContent>
-          </Card>
+          <FeatureCard key={index} icon={feature.icon} label={feature.label} />
         ))}
       </div>
     </section>
