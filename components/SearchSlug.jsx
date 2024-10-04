@@ -10,9 +10,7 @@ function SearchSlug() {
       <SelectIndicator defaultValue={"Lease"} options={housingOptions} />
       <Input size="lg" placeholder="Search Locality" className="w-[350px]" />
       <IconButton
-        aria-label="Open in new tab"
-        component="a"
-        href="#as-link"
+        aria-label="Search"
         className="bg-[#F4511E] px-[14px] py-[14px] hover:bg-[#F4511E]"
       >
         <Search className="text-white" sx={{ fontSize: 24 }} />
