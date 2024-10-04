@@ -7,7 +7,11 @@ function SearchSlug() {
   let housingOptions = ["Lease", "Rent", "Buy"];
   return (
     <div className="text-white mt-20 flex gap-2">
-      <SelectIndicator defaultValue={"Lease"} options={housingOptions} />
+      <SelectIndicator
+        defaultValue={housingOptions[0]}
+        options={housingOptions}
+        classes="w-28"
+      />
       <Input size="lg" placeholder="Search Locality" className="w-[350px]" />
       <IconButton
         aria-label="Search"

@@ -15,7 +15,7 @@ function SearchRoomSlug() {
           roommate finder option. We provide you the flexibility that you most
           desire.
         </div>
-        <Button className="mt-10 h-[72px] bg-primary w-52 hover:bg-primary">
+        <Button className="mt-10 font-medium text-xl h-[72px] bg-primary w-52 hover:bg-primary">
           Search Rooms
         </Button>
       </div>

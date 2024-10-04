@@ -9,13 +9,14 @@ export default function SelectIndicator({
   options,
   defaultValue,
   placeHolder,
+  classes = "",
 }) {
   return (
     <Select
       indicator={<KeyboardArrowDown />}
       placeholder={placeHolder}
       defaultValue={defaultValue}
-      className="text-base text-[#1F2328] font-medium w-28"
+      className={`text-base text-[#1F2328] font-medium ${classes}`}
       sx={{
         [`& .${selectClasses.indicator}`]: {
           transition: "0.2s",

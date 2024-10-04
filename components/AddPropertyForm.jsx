@@ -10,8 +10,17 @@ import {
   Input,
   Textarea,
 } from "@mui/joy";
+import SelectIndicator from "./SelectIndicator";
 
 function AddPropertyForm() {
+  const popularCities = [
+    "Mumbai",
+    "Pune",
+    "Hyderabad",
+    "New Delhi",
+    "Ratnagiri",
+  ];
+  const roomTypes = ["Studio", "1 Bedroom", "2 Bedroom", "Penthouse"];
   const fileInputRef = useRef(null);
 
   const handleDivClick = () => {
@@ -46,11 +55,19 @@ function AddPropertyForm() {
             </div>
             <div>
               <FormLabel required>City</FormLabel>
-              <Input placeholder="Enter Name" />
+              <SelectIndicator
+                placeHolder={"Select City"}
+                options={popularCities}
+                classes="w-full"
+              />
             </div>
             <div>
               <FormLabel required>Room Type</FormLabel>
-              <Input placeholder="Enter Address" />
+              <SelectIndicator
+                placeHolder={"Select Room Type"}
+                options={roomTypes}
+                classes="w-full"
+              />
             </div>
             <div>
               <FormLabel required>Price</FormLabel>
@@ -74,7 +91,7 @@ function AddPropertyForm() {
               </center>
             </div>
           </div>
-          <Button className="w-full h-[72px] mt-10 bg-primary hover:bg-primary">
+          <Button className="w-full h-[72px] font-medium text-xl mt-10 bg-primary hover:bg-primary">
             Add New Property
           </Button>
         </FormControl>
