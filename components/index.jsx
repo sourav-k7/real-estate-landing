@@ -4,5 +4,14 @@ import FeatureSlug from "./FeatureSlug";
 import PropertyListings from "./PropertyListings";
 import AddPropertyForm from "./AddPropertyForm";
 import Footer from "./Footer";
+import TestimonialSection from "./TestimonialSection";
 
-export { NavBar, Hero, FeatureSlug, PropertyListings, AddPropertyForm, Footer };
+export {
+  NavBar,
+  Hero,
+  FeatureSlug,
+  PropertyListings,
+  AddPropertyForm,
+  Footer,
+  TestimonialSection,
+};

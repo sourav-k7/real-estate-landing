@@ -89,19 +89,23 @@ function Footer() {
         <ul className="flex flex-row gap-40">
           <li className="columns-2 gap-40">
             <h2 className="font-bold text-lg mb-4">Pages</h2>
-            {pages.map((page) => (
-              <li key={page} className="mb-4">
-                {page}
-              </li>
-            ))}
+            <ul>
+              {pages.map((page) => (
+                <li key={page} className="mb-4">
+                  {page}
+                </li>
+              ))}
+            </ul>
           </li>
           <li>
             <h2 className="font-bold text-lg mb-4">Utility Pages</h2>
-            {utilityPages.map((page) => (
-              <li key={page} className="mb-4">
-                {page}
-              </li>
-            ))}
+            <ul>
+              {utilityPages.map((page) => (
+                <li key={page} className="mb-4">
+                  {page}
+                </li>
+              ))}
+            </ul>
           </li>
         </ul>
       </div>

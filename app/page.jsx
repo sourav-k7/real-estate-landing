@@ -3,6 +3,7 @@ import {
   FeatureSlug,
   Hero,
   PropertyListings,
+  TestimonialSection,
 } from "@components";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <PropertyListings />
       <div>description</div>
       <AddPropertyForm />
-      <div>testimonial section</div>
+      <TestimonialSection />
     </div>
   );
 }
