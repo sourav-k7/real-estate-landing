@@ -34,13 +34,13 @@ function AddPropertyForm() {
     }
   };
   return (
-    <section className="mx-20 mt-[84px]">
+    <section className="mx-5 md:mx-10 lg:mx-20 mt-[84px]">
       <Card variant="soft" className="bg-white shadow-all-xl p-11">
         <center className="font-bold text-[28px] text-secondary">
           Add A New Property
         </center>
         <FormControl>
-          <div className="grid grid-cols-3 gap-10 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
             <div>
               <FormLabel required>Name</FormLabel>
               <Input placeholder="Enter Name" />

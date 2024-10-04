@@ -74,9 +74,9 @@ function FeatureSlug() {
     },
   ];
   return (
-    <section className="mx-20 mt-[84px]">
+    <section className="mx-5 md:mx-10 lg:mx-20 mt-7 sm:mt-8 md:mt-16 lg:mt-[84px]">
       <SectionTitle title={"Minimum Living Cost for everything"} />
-      <div className="grid grid-cols-4 mt-9 gap-5">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6 md:mt-9 gap-4 md:gap-5">
         {features.map((feature, index) => (
           <FeatureCard key={index} icon={feature.icon} label={feature.label} />
         ))}

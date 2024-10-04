@@ -12,10 +12,14 @@ function SearchSlug() {
         options={housingOptions}
         classes="w-28"
       />
-      <Input size="lg" placeholder="Search Locality" className="w-[350px]" />
+      <Input
+        size="lg"
+        placeholder="Search Locality"
+        className="max-w-[350px] w-full"
+      />
       <IconButton
         aria-label="Search"
-        className="bg-[#F4511E] px-[14px] py-[14px] hover:bg-[#F4511E]"
+        className="bg-[#F4511E] px-[14px] py-[14px] hover:bg-[#F4511E] hidden sm:block"
       >
         <Search className="text-white" sx={{ fontSize: 24 }} />
       </IconButton>

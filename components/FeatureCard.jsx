@@ -7,11 +7,11 @@ function FeatureCard({ icon, label }) {
       orientation="vertical"
       size="sm"
       variant="outlined"
-      className="py-8 px-9 bg-white shadow-all-lg"
+      className="py-4 md:py-6 lg:py-8 px-5 sm:px-7 lg:px-9 bg-white shadow-all-lg"
     >
       <CardContent>
         {icon}
-        <div className="font-semibold text-[28px] text-primary mt-12">
+        <div className="font-semibold text-sm sm:text-lg md:text-2xl lg:text-[28px] text-primary mt-5 sm:mt-7 md:mt-10 lg:mt-12">
           {label}
         </div>
       </CardContent>

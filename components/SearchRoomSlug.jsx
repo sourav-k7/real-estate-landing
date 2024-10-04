@@ -3,7 +3,7 @@ import RoomFeatureCollage from "./RoomFeatureCollage";
 
 function SearchRoomSlug() {
   return (
-    <section className="grid grid-cols-2 justify-center mt-16">
+    <section className="grid grid-cols-1 lg:grid-cols-2 justify-center mt-16">
       <RoomFeatureCollage />
       <div className="px-12 flex flex-col items-start justify-center">
         <div className="font-extrabold text-[40px] text-primary+">
