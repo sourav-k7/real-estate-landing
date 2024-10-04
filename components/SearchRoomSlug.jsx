@@ -5,11 +5,11 @@ function SearchRoomSlug() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 justify-center mt-16">
       <RoomFeatureCollage />
-      <div className="px-12 flex flex-col items-start justify-center">
-        <div className="font-extrabold text-[40px] text-primary+">
+      <div className="px-12 flex flex-col items-start justify-center text-center lg:text-left">
+        <div className="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[40px] text-primary mt-6 lg:mt-0">
           Flexibility and options to suit your lifestyle.
         </div>
-        <div className="text-lg text-[#6B7280]">
+        <div className="text-xs md:text-base lg:text-lg text-[#6B7280] mt-4 lg:mt-0">
           You need it? We got it. We make finding your next home easy,
           comfortable, and simple. From our happiness guarantee to our selective
           roommate finder option. We provide you the flexibility that you most
