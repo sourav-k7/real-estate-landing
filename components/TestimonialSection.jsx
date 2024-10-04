@@ -46,6 +46,7 @@ function TestimonialSection() {
       <Carousel
         itemCount={testimonials.length}
         onIndexChange={handleTestimonialIndexChange}
+        autoScrollDuration={3000}
       >
         {testimonials.map((testimonial) => (
           <div

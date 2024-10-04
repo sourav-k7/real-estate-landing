@@ -17,16 +17,22 @@ export default function PropertyCard({
   imgSrc,
 }) {
   return (
-    <Card className="rounded-xl bg-white w-[400px]">
+    <Card className="rounded-xl bg-white w-full min-w-full md:w-[400px]">
       <CardOverflow>
         <AspectRatio ratio="2">
           <Image src={imgSrc} alt="Property-image" fill />
         </AspectRatio>
       </CardOverflow>
       <CardContent>
-        <div className="font-bold text-2xl text-black">{address}</div>
-        <div className="font-normal text-base text-[#818181]">Private Room</div>
-        <div className="font-bold text-[26px] text-secondary">{price}</div>
+        <div className="font-bold text-base sm:text-lg md:text-xl lg:text-2xl text-black">
+          {address}
+        </div>
+        <div className="font-normal text-xs md:text-base text-[#818181]">
+          Private Room
+        </div>
+        <div className="font-bold text-xl sm:text-2xl lg:text-[26px] text-secondary">
+          {price}
+        </div>
       </CardContent>
       <CardOverflow
         variant="soft"
