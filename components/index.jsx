@@ -5,6 +5,7 @@ import PropertyListings from "./PropertyListings";
 import AddPropertyForm from "./AddPropertyForm";
 import Footer from "./Footer";
 import TestimonialSection from "./TestimonialSection";
+import SearchRoomSlug from "./SearchRoomSlug";
 
 export {
   NavBar,
@@ -14,4 +15,5 @@ export {
   AddPropertyForm,
   Footer,
   TestimonialSection,
+  SearchRoomSlug,
 };

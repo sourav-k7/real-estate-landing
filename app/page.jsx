@@ -3,6 +3,7 @@ import {
   FeatureSlug,
   Hero,
   PropertyListings,
+  SearchRoomSlug,
   TestimonialSection,
 } from "@components";
 
@@ -12,7 +13,7 @@ export default function Home() {
       <Hero />
       <FeatureSlug />
       <PropertyListings />
-      <div>description</div>
+      <SearchRoomSlug />
       <AddPropertyForm />
       <TestimonialSection />
     </div>

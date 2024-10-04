@@ -1,5 +1,4 @@
 import { ImQuotesLeft } from "react-icons/im";
-import { FaRegCircleUser } from "react-icons/fa6";
 import { Avatar } from "@mui/joy";
 
 function TestimonialSection() {
