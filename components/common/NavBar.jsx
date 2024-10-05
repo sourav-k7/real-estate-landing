@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "@mui/joy/Button";
-import logo from "../public/logo.svg";
+import logo from "../../public/logo.svg";
 import { MenuOutlined } from "@mui/icons-material";
 import { Box, Drawer, List, ListItem, ListItemButton } from "@mui/joy";
 import ListItemText from "@mui/material/ListItemText";

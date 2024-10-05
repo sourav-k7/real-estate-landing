@@ -3,7 +3,7 @@ import HeroSection from "./heroSection/HeroSection";
 import FeatureSlug from "./featureSlug/FeatureSlug";
 import PropertyListings from "./propertyListing/PropertyListings";
 import AddPropertyForm from "./AddPropertyForm";
-import Footer from "./Footer";
+import Footer from "./common/Footer";
 import TestimonialSection from "./testimonialSection/TestimonialSection";
 import SearchRoomSlug from "./searchRoom/SearchRoomSlug";
 
