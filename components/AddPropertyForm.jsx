@@ -92,7 +92,7 @@ function AddPropertyForm() {
               <center className="text-black font-medium text-base lg:hidden">
                 Click here to Upload Image
               </center>
-              <center className="font-medium text-xs text-opacity-50 text-black mt-3">
+              <center className="font-medium text-xs text-opacity-50 text-black mt-2 lg:mt-3">
                 Supported: JPG, JPEG, PNG
               </center>
             </div>

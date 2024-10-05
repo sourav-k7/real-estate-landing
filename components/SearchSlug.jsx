@@ -21,7 +21,7 @@ function SearchSlug() {
       </div>
       <IconButton
         aria-label="Search"
-        className="bg-[#F4511E] px-[14px] py-[14px] hover:bg-[#F4511E] text-center"
+        className="bg-[#F4511E]  px-[14px] py-3 sm:py-[14px] hover:bg-[#F4511E] text-center"
       >
         <Search className="text-white" sx={{ fontSize: 24 }} />
         <span className="text-white ml-3 sm:hidden">Search</span>

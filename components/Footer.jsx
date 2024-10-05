@@ -33,7 +33,7 @@ function Footer() {
     <footer className="bg-primary px-5 lg:px-20 py-10 lg:py-[120px] text-white flex flex-col-reverse md:flex-row justify-between gap-5">
       <CompanyDetailsSlug />
       <div className="">
-        <ul className="flex flex-row justify-center lg:justify-start gap-5 lg:gap-40">
+        <ul className="flex flex-row justify-center lg:justify-start gap-8 lg:gap-40">
           <li className="sm:columns-2 sm:gap-5 lg:gap-40">
             <h2 className="font-bold text-lg mb-4">Pages</h2>
             <ul>

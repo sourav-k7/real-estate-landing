@@ -50,7 +50,7 @@ function PropertyListings() {
     <section className="mx-5 md:mx-10 lg:mx-20 mt-11 sm:mt-16 md:mt-24 lg:mt-32">
       <div className="flex justify-between items-center">
         <SectionTitle title={"List of properties"} />
-        <Button className="bg-primary hidden sm:block sm:h-12 md:h-14 lg:h-[72px] font-medium text-xl hover:bg-primary">
+        <Button className="bg-primary hidden sm:block sm:h-12 md:h-14 lg:h-[72px] font-medium text-base md:text-lg lg:text-xl hover:bg-primary">
           View All Property
         </Button>
       </div>
