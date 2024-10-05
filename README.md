@@ -14,7 +14,7 @@ git clone https://github.com/sourav-k7/real-estate-landing.git
 npm install
 ```
 
-- Create a `.env.local` file in root directory and add following keys in it.
+- Create `.env.local` file in root directory and add following keys in it.
 
 ```
 NEXT_PUBLIC_API_URL=http://localhost:{write port here without curly braces}
