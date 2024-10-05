@@ -1,4 +1,4 @@
-import CompanyDetailsSlug from "./CompanyDetailsSlug";
+import CompanyDetailsSlug from "./common/CompanyDetailsSlug";
 
 function Footer() {
   let pages = [

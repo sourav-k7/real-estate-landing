@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Button } from "@mui/joy";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../common/SectionTitle";
 import PropertyCard from "./PropertyCard";
-import Carousel from "./Carousel";
+import Carousel from "../common/Carousel";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 
 function PropertyListings() {

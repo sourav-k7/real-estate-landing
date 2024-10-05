@@ -1,5 +1,5 @@
 import { CardContent, Card } from "@mui/joy";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../common/SectionTitle";
 import {
   AccountBalanceWalletOutlined,
   AddCardOutlined,

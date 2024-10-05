@@ -1,4 +1,4 @@
-import SearchSlug from "./SearchSlug";
+import SearchSlug from "../SearchSlug";
 
 function HeroSection() {
   return (

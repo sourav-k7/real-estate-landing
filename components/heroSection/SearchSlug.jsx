@@ -1,4 +1,4 @@
-import SelectIndicator from "./SelectIndicator";
+import SelectIndicator from "../common/SelectIndicator";
 import Input from "@mui/joy/Input";
 import IconButton from "@mui/joy/IconButton";
 import { Search } from "@mui/icons-material";

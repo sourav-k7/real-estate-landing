@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Carousel from "./Carousel";
-import TestimonialCard from "./testimonialCard";
+import Carousel from "../common/Carousel";
+import TestimonialCard from "./TestimonialCard";
 
 function TestimonialSection() {
   let testimonials = [

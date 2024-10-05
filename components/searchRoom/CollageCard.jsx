@@ -8,6 +8,7 @@ function CollageCard({ imgSrc, label, height, width }) {
         alt="room"
         width={width}
         height={height}
+        layout="responsive"
         className="rounded-xl"
       />
       <div
