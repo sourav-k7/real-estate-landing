@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { ImQuotesLeft } from "react-icons/im";
-import { Avatar } from "@mui/joy";
 import Carousel from "./Carousel";
+import TestimonialCard from "./testimonialCard";
 
 function TestimonialSection() {
   let testimonials = [
@@ -42,40 +41,21 @@ function TestimonialSection() {
   }
 
   return (
-    <section className="grid grid-cols-2 h-[596px] bg-primary bg-opacity-[7%] mt-[92px] relative">
+    <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-primary bg-opacity-[7%] mt-9 lg:mt-[92px] relative">
       <Carousel
         itemCount={testimonials.length}
         onIndexChange={handleTestimonialIndexChange}
         autoScrollDuration={3000}
       >
         {testimonials.map((testimonial) => (
-          <div
-            key={testimonial.id}
-            className="pt-20 pl-32 pb-20 pr-10 min-w-full"
-          >
-            <div className="relative text-[21px] text-[#6D220A]">
-              <ImQuotesLeft className="h-[60px] w-[70px] absolute -left-12 -top-7 text-secondary opacity-30" />
-              {testimonial.comment}
-            </div>
-            <div className="mt-24 flex gap-5">
-              <div>
-                <Avatar
-                  src={"https://i.pravatar.cc/300"}
-                  variant="outlined"
-                  className="h-[60px] w-[60px]"
-                />
-              </div>
-              <div>
-                <div className="text-secondary font-bold text-lg">
-                  {testimonial.name}
-                </div>
-                <div className="text-primary">Property owner</div>
-              </div>
-            </div>
-          </div>
+          <TestimonialCard
+            id={testimonial.id}
+            comment={testimonial.comment}
+            name={testimonial.name}
+          />
         ))}
       </Carousel>
-      <div className="absolute left-32 bottom-16 flex gap-3">
+      <div className="absolute left-5 lg:left-32 bottom-5 lg:bottom-16 flex gap-3">
         {testimonials.map((opt) => (
           <div
             key={opt.id}
@@ -87,8 +67,8 @@ function TestimonialSection() {
           />
         ))}
       </div>
-      <div className="bg-black h-full flex justify-center">
-        {/* <video
+      <div className="bg-black h-full flex justify-center mt-5 lg:mt-0 mx-5 lg:mx-0">
+        <video
           controls
           preload="metadata"
           key={currentTestimonialIndex}
@@ -99,7 +79,7 @@ function TestimonialSection() {
             type="video/mp4"
           />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
       </div>
     </section>
   );
