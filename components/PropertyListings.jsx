@@ -14,10 +14,13 @@ function PropertyListings() {
     fetchPropertiesDetails();
   }, []);
   async function fetchPropertiesDetails() {
-    const res = await fetch("http://localhost:3000/api/properties", {
-      method: "GET",
-      cache: "no-cache",
-    });
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/properties`,
+      {
+        method: "GET",
+        cache: "no-cache",
+      }
+    );
     let details = await res.json();
     setProperties(details);
   }
