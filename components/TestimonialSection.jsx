@@ -42,21 +42,23 @@ function TestimonialSection() {
 
   return (
     <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-primary bg-opacity-[7%] mt-9 lg:mt-[92px] relative">
-      <Carousel
-        itemCount={testimonials.length}
-        onIndexChange={handleTestimonialIndexChange}
-        autoScrollDuration={3000}
-      >
-        {testimonials.map((testimonial) => (
-          <TestimonialCard
-            key={testimonial.id}
-            id={testimonial.id}
-            comment={testimonial.comment}
-            name={testimonial.name}
-          />
-        ))}
-      </Carousel>
-      <div className="absolute left-5 lg:left-32 bottom-5 lg:bottom-16 flex gap-3">
+      <div className="xl:py-10">
+        <Carousel
+          itemCount={testimonials.length}
+          onIndexChange={handleTestimonialIndexChange}
+          autoScrollDuration={3000}
+        >
+          {testimonials.map((testimonial) => (
+            <TestimonialCard
+              key={testimonial.id}
+              id={testimonial.id}
+              comment={testimonial.comment}
+              name={testimonial.name}
+            />
+          ))}
+        </Carousel>
+      </div>
+      <div className="absolute left-5 lg:left-32 bottom-5 lg:bottom-12 flex gap-3">
         {testimonials.map((opt) => (
           <div
             key={opt.id}
