@@ -10,7 +10,10 @@ function CollageCard({ imgSrc, label, height, width }) {
         height={height}
         className="rounded-xl"
       />
-      <div className="absolute inset-0 flex justify-center items-start mt-5 font-semibold text-white text-2xl text-center">
+      <div
+        className="absolute inset-0 flex justify-center items-start mt-5 font-semibold text-white 
+	  text-sm sm:text-lg md:text-xl lg:text-2xl text-center"
+      >
         {label}
       </div>
     </div>

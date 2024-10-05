@@ -17,7 +17,7 @@ export default function PropertyCard({
   imgSrc,
 }) {
   return (
-    <Card className="rounded-xl bg-white w-full min-w-full md:w-[400px]">
+    <Card className="rounded-xl bg-white w-full min-w-full">
       <CardOverflow>
         <AspectRatio ratio="2">
           <Image src={imgSrc} alt="Property-image" fill />

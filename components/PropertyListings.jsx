@@ -51,14 +51,14 @@ function PropertyListings() {
           View All Property
         </Button>
       </div>
-      <div className="hidden md:grid md:grid-cols-2 xl:grid-cols-3 gap-9 mt-12">
+      <div className="hidden sm:grid sm:grid-cols-2 xl:grid-cols-3 gap-9 mt-12">
         {getPropertiesCard()}
       </div>
-      <div className=" md:hidden mt-4">
+      <div className=" sm:hidden mt-4">
         <Carousel index={carouselCurrentIndex} itemCount={properties.length}>
           {getPropertiesCard()}
         </Carousel>
-        <div className="flex justify-between mt-4">
+        <div className="flex justify-between mt-4 sm:hidden">
           <Button className="bg-primary hover:bg-primary text-sm font-medium h-12">
             View All Property
           </Button>

@@ -88,20 +88,18 @@ function TestimonialSection() {
         ))}
       </div>
       <div className="bg-black h-full flex justify-center">
-        {
-          <video
-            controls
-            preload="metadata"
-            key={currentTestimonialIndex}
-            autoPlay
-          >
-            <source
-              src={testimonials[currentTestimonialIndex].videoUrl}
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        }
+        {/* <video
+          controls
+          preload="metadata"
+          key={currentTestimonialIndex}
+          autoPlay
+        >
+          <source
+            src={testimonials[currentTestimonialIndex].videoUrl}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video> */}
       </div>
     </section>
   );
