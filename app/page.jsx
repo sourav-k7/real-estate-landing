@@ -1,7 +1,7 @@
 import {
   AddPropertyForm,
   FeatureSlug,
-  Hero,
+  HeroSection,
   PropertyListings,
   SearchRoomSlug,
   TestimonialSection,
@@ -10,7 +10,7 @@ import {
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <HeroSection />
       <FeatureSlug />
       <PropertyListings />
       <SearchRoomSlug />

@@ -1,6 +1,6 @@
 import SearchSlug from "./SearchSlug";
 
-function Hero() {
+function HeroSection() {
   return (
     <div
       className="h-screen flex flex-col justify-center"
@@ -20,4 +20,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HeroSection;

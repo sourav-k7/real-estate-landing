@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import Hero from "./Hero";
+import HeroSection from "./HeroSection";
 import FeatureSlug from "./FeatureSlug";
 import PropertyListings from "./PropertyListings";
 import AddPropertyForm from "./AddPropertyForm";
@@ -9,7 +9,7 @@ import SearchRoomSlug from "./SearchRoomSlug";
 
 export {
   NavBar,
-  Hero,
+  HeroSection,
   FeatureSlug,
   PropertyListings,
   AddPropertyForm,
