@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Carousel from "../common/Carousel";
 import TestimonialCard from "./TestimonialCard";
+import Head from "next/head";
 
 function TestimonialSection() {
   let testimonials = [
@@ -41,48 +42,63 @@ function TestimonialSection() {
   }
 
   return (
-    <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-primary bg-opacity-[7%] mt-9 lg:mt-[92px] relative">
-      <div className="xl:py-10">
-        <Carousel
-          itemCount={testimonials.length}
-          onIndexChange={handleTestimonialIndexChange}
-          autoScrollDuration={3000}
-        >
-          {testimonials.map((testimonial) => (
-            <TestimonialCard
-              key={testimonial.id}
-              id={testimonial.id}
-              comment={testimonial.comment}
-              name={testimonial.name}
-            />
-          ))}
-        </Carousel>
-      </div>
-      <div className="absolute left-5 lg:left-32 bottom-5 lg:bottom-12 flex gap-3">
-        {testimonials.map((opt) => (
-          <div
-            key={opt.id}
-            className={`mt-20 w-[10px] h-[10px] rounded-full ${
-              opt.id == currentTestimonialIndex ? "bg-primary" : "bg-[#D9DBE1]"
-            }`}
-          />
-        ))}
-      </div>
-      <div className="bg-black h-full flex justify-center mt-5 lg:mt-0 mx-5 lg:mx-0">
-        <video
-          controls
-          preload="metadata"
-          key={currentTestimonialIndex}
-          autoPlay
-        >
-          <source
-            src={testimonials[currentTestimonialIndex].videoUrl}
+    <>
+      <Head>
+        {testimonials.map((testimonial, index) => (
+          <link
+            key={index}
+            rel="preload"
+            as="video"
+            href={testimonial.videoUrl}
             type="video/mp4"
           />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
+        ))}
+      </Head>
+      <section className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-primary bg-opacity-[7%] mt-9 lg:mt-[92px] relative">
+        <div className="xl:py-10">
+          <Carousel
+            itemCount={testimonials.length}
+            onIndexChange={handleTestimonialIndexChange}
+            autoScrollDuration={3000}
+          >
+            {testimonials.map((testimonial) => (
+              <TestimonialCard
+                key={testimonial.id}
+                id={testimonial.id}
+                comment={testimonial.comment}
+                name={testimonial.name}
+              />
+            ))}
+          </Carousel>
+        </div>
+        <div className="absolute left-5 lg:left-32 bottom-5 lg:bottom-12 flex gap-3">
+          {testimonials.map((opt) => (
+            <div
+              key={opt.id}
+              className={`mt-20 w-[10px] h-[10px] rounded-full ${
+                opt.id == currentTestimonialIndex
+                  ? "bg-primary"
+                  : "bg-[#D9DBE1]"
+              }`}
+            />
+          ))}
+        </div>
+        <div className="bg-black h-full flex justify-center mt-5 lg:mt-0 mx-5 lg:mx-0">
+          <video
+            controls
+            preload="metadata"
+            key={currentTestimonialIndex}
+            autoPlay
+          >
+            <source
+              src={testimonials[currentTestimonialIndex].videoUrl}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </>
   );
 }
 

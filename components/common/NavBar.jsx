@@ -25,8 +25,8 @@ const NavBar = () => {
           "Landlord",
           "Tenants",
           "Contact Us",
-        ].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        ].map((text) => (
+          <ListItem key={text}>
             <ListItemButton>
               <ListItemText primary={text} />
             </ListItemButton>

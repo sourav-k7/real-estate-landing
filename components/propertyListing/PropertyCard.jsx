@@ -20,7 +20,13 @@ export default function PropertyCard({
     <Card className="rounded-xl bg-white w-full min-w-full">
       <CardOverflow>
         <AspectRatio ratio="2">
-          <Image src={imgSrc} alt="Property-image" fill />
+          <Image
+            src={imgSrc}
+            alt="Property-image"
+            fill
+            sizes="100%"
+            priority={false}
+          />
         </AspectRatio>
       </CardOverflow>
       <CardContent>

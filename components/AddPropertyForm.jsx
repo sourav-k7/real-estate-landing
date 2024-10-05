@@ -130,8 +130,7 @@ function AddPropertyForm() {
                     name="city"
                     value={values.city}
                     onChange={(e, newValue) => setFieldValue("city", newValue)}
-                    onBlur={handleBlur}
-                    className={`text-base text-primary bg-white`}
+                    className={`text-base bg-white`}
                     sx={{
                       [`& .${selectClasses.indicator}`]: {
                         transition: "0.2s",
@@ -166,8 +165,7 @@ function AddPropertyForm() {
                     onChange={(e, newValue) =>
                       setFieldValue("roomType", newValue)
                     }
-                    onBlur={handleBlur}
-                    className={`text-base text-primary bg-white`}
+                    className={`text-base bg-white`}
                     sx={{
                       [`& .${selectClasses.indicator}`]: {
                         transition: "0.2s",
