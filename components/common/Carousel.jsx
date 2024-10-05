@@ -9,6 +9,8 @@ function Carousel({
   index = 0,
 }) {
   const [currentIndex, setCurrentIndex] = useState(index);
+
+  // Effect to handle auto-scrolling based on `autoScrollDuration` if it's greater than 0
   useEffect(() => {
     let interval;
     if (autoScrollDuration > 0) {
@@ -19,13 +21,16 @@ function Carousel({
     return () => clearInterval(interval);
   }, [itemCount, autoScrollDuration]);
 
+  // Effect to trigger the `onIndexChange` callback whenever `currentIndex` changes
   useEffect(() => {
     onIndexChange && onIndexChange(currentIndex);
   }, [currentIndex, onIndexChange]);
 
+  // Effect to update `currentIndex` whenever the `index` prop changes
+  // `index` prop is shared by parent component
   useEffect(() => {
     setCurrentIndex(index % itemCount);
-  }, [index]);
+  }, [index, itemCount]);
 
   return (
     <div className="relative w-full max-w-4xl mx-auto overflow-hidden">

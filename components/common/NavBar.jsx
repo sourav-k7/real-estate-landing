@@ -10,6 +10,14 @@ import { Box, Drawer, List, ListItem, ListItemButton } from "@mui/joy";
 import ListItemText from "@mui/material/ListItemText";
 
 const NavBar = () => {
+  let navLinks = [
+    "Home",
+    "Our Mission",
+    "About Us",
+    "Landlord",
+    "Tenants",
+    "Contact Us",
+  ];
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen) => () => {
@@ -18,14 +26,7 @@ const NavBar = () => {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {[
-          "Home",
-          "Our Mission",
-          "About Us",
-          "Landlord",
-          "Tenants",
-          "Contact Us",
-        ].map((text) => (
+        {navLinks.map((text) => (
           <ListItem key={text}>
             <ListItemButton>
               <ListItemText primary={text} />
@@ -35,6 +36,7 @@ const NavBar = () => {
       </List>
     </Box>
   );
+
   return (
     <header className="w-full h-[86px] absolute z-10">
       <nav className="max-w-[1440px] flex justify-between items-center bg-transparent py-[22px] px-5 md:px-10 lg:px-20 gap-10">
@@ -45,12 +47,11 @@ const NavBar = () => {
         </div>
         <div className="flex gap-12 xl:gap-24">
           <div className="text-white gap-9 xl:gap-11 items-center text-base hidden lg:flex text-center">
-            <div className="cursor-pointer">Home</div>
-            <div className="cursor-pointer">Our Mission</div>
-            <div className="cursor-pointer">About Us</div>
-            <div className="cursor-pointer">Landlord</div>
-            <div className="cursor-pointer">Tenants</div>
-            <div className="cursor-pointer">Contact Us</div>
+            {navLinks.map((navLink, index) => (
+              <div key={index} className="cursor-pointer">
+                {navLink}
+              </div>
+            ))}
           </div>
           <div className="gap-3 hidden lg:flex">
             <Button

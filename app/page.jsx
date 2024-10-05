@@ -9,13 +9,13 @@ import {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
       <FeatureSlug />
       <PropertyListings />
       <SearchRoomSlug />
       <AddPropertyForm />
       <TestimonialSection />
-    </div>
+    </>
   );
 }
