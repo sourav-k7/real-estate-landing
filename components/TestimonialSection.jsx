@@ -7,7 +7,7 @@ import TestimonialCard from "./testimonialCard";
 function TestimonialSection() {
   let testimonials = [
     {
-      id: 1,
+      id: 0,
       comment:
         "We absolutely love our new home! The open layout, natural light, and modern design exceeded our expectations. The attention to detail in every corner is remarkable. The neighborhood is friendly, and we instantly felt at home. The buying process was smooth, and the team was incredibly helpful throughout. Highly recommend this beautiful property!",
       name: "John Mitchell",
@@ -16,7 +16,7 @@ function TestimonialSection() {
       imageUrl: "https://i.pravatar.cc/300",
     },
     {
-      id: 2,
+      id: 1,
       comment:
         "Our new house is everything we dreamed of! The spacious rooms and stylish finishes make it feel luxurious, yet cozy. We appreciate how thoughtfully designed each space is. The location is perfect for our family, close to schools and parks. We're truly happy with our choice and excited for this new chapter.",
       name: " Sarah Thompson",
@@ -25,7 +25,7 @@ function TestimonialSection() {
       imageUrl: "https://i.pravatar.cc/300",
     },
     {
-      id: 3,
+      id: 2,
       comment:
         "Moving into this house has been a fantastic experience! The craftsmanship is outstanding, and the blend of modern and classic design elements really adds charm. We’re especially impressed with the outdoor space, perfect for relaxing and entertaining. The community is welcoming, and we couldn't be happier with our decision to call this place home.",
       name: "David Walker",
@@ -49,6 +49,7 @@ function TestimonialSection() {
       >
         {testimonials.map((testimonial) => (
           <TestimonialCard
+            key={testimonial.id}
             id={testimonial.id}
             comment={testimonial.comment}
             name={testimonial.name}
@@ -60,9 +61,7 @@ function TestimonialSection() {
           <div
             key={opt.id}
             className={`mt-20 w-[10px] h-[10px] rounded-full ${
-              opt.id - 1 == currentTestimonialIndex
-                ? "bg-primary"
-                : "bg-[#D9DBE1]"
+              opt.id == currentTestimonialIndex ? "bg-primary" : "bg-[#D9DBE1]"
             }`}
           />
         ))}
