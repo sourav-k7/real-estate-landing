@@ -1,5 +1,6 @@
 import { IconButton } from "@mui/joy";
 import Image from "next/image";
+import logo from "../public/logo.svg";
 import Link from "next/link";
 import { Language } from "@mui/icons-material";
 import { FaFacebookF, FaGoogle, FaLinkedinIn, FaTwitter } from "react-icons/fa";
@@ -28,15 +29,9 @@ function CompanyDetailsSlug() {
     },
   ];
   return (
-    <div>
+    <div className="m-auto md:m-0">
       <Link href="/" className="">
-        <Image
-          src="/logo.svg"
-          alt="logo"
-          width={147}
-          height={50}
-          className="mb-3"
-        />
+        <Image src={logo} alt="logo" className="mb-3" />
       </Link>
       <span>
         Lorem ipsum dolor sit amet, consectetur

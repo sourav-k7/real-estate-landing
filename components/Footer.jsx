@@ -30,11 +30,11 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-primary px-5 lg:px-20 py-10 lg:py-[120px] text-white flex justify-between">
+    <footer className="bg-primary px-5 lg:px-20 py-10 lg:py-[120px] text-white flex flex-col-reverse md:flex-row justify-between gap-5">
       <CompanyDetailsSlug />
-      <div className="hidden md:block">
-        <ul className="flex flex-row gap-40">
-          <li className="columns-2 gap-40">
+      <div className="">
+        <ul className="flex flex-row justify-center lg:justify-start gap-5 lg:gap-40">
+          <li className="sm:columns-2 sm:gap-5 lg:gap-40">
             <h2 className="font-bold text-lg mb-4">Pages</h2>
             <ul>
               {pages.map((page) => (
